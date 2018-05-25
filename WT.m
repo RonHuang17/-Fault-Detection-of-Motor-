@@ -2,8 +2,8 @@ clc
 clear
 
 for j=1:50
-%m = load(['D:\馬達故障分析(Fault Detection of Motor)\Experiement_Results\Cut\0\x',num2str(j),'']);
-m = load(['D:\馬達故障分析(Fault Detection of Motor)\Experiement_Results\Cut\0525_300W_Generator_Oringinal_Current_Data_Cut_Tony\D0\x',num2str(j),'']);
+m = load(['D:\馬達故障分析(Fault Detection of Motor)\Experiement_Results\Cut\0\x',num2str(j),'']);
+%m = load(['D:\馬達故障分析(Fault Detection of Motor)\Experiement_Results\Cut\0525_300W_Generator_Oringinal_Current_Data_Cut_Tony\D0\x',num2str(j),'']);
 
 m = awgn(m,0,'measured');
 [c,l] = wavedec(m,5,'sym4');
